@@ -10,6 +10,10 @@ public class Main {
                 count++;
             }else{
                 count--;
+                if(count == -1){
+                    count = i+1;
+                    break;
+                }
             }
         }
         System.out.println(count);
